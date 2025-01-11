@@ -20,6 +20,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        video{
+            pointer-events: none;
+        }
+    </style>
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
   <!-- Put your site title here -->
@@ -78,7 +83,7 @@
           <div class="work__box">
               <div class="work__text">
                   <h3>Life Under Pressure</h3>
-                  <h4><b>Lead Programmer</b></h4>
+                  <h4><b>Gameplay Programmer</b></h4>
                   <p>
                       Underwater sea life exploration game with a focus on free form education about marine environment.
                   </p>
@@ -102,10 +107,9 @@
                   </div>
               </div>
               <div class="work__image-box">
-                  <video controls width="1280" height="720">
-                      <source src="LIfeUnderPressure720.mp4" type="video/mp4" />
+                  <video playsinline autoplay loop muted disablePictureInPicture width="800" height="450">
+                      <source src="./videos/LifeUnderPressure.mp4" type="video/mp4" />
                   </video>
-                  <!-- <img src="./images/lifeunderpressure.gif" class="work__image" alt="Project 1" /> -->
               </div>
           </div>
 
@@ -133,7 +137,9 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/conquest.gif" class="work__image" alt="Project 1" />
+                <video playsinline autoplay loop muted disablePictureInPicture width="800" height="450">
+                    <source src="./videos/Conquest.mp4" type="video/mp4" />
+                </video>
             </div>
           </div>
 
@@ -159,9 +165,11 @@
                       </a>
                   </div>
               </div>
-            <div class="work__image-box">
-              <img src="./images/fowleri.gif" class="work__image" alt="Project 3" />
-            </div>
+              <div class="work__image-box">
+                  <video playsinline autoplay loop muted disablePictureInPicture width="800" height="450">
+                      <source src="./videos/Fowleri.mp4" type="video/mp4" />
+                  </video>
+              </div>
           </div>
         </div>
       </div>
