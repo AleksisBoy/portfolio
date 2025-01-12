@@ -66,6 +66,19 @@ html {
     }
 }
 
+video {
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+@media (max-width: 500px) {
+    video {
+        margin: 0 10px;
+    }
+}
 body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
@@ -508,6 +521,27 @@ body:not(.user-is-tabbing) a:focus {
         height: 4rem;
     }
 }
+
+/* --------------------------------------- */
+/* ----- Education ----- */
+/* --------------------------------------- */
+
+.background-box {
+    width: 380px; /* Set the box width */
+    padding: 14px; /* Add space inside the box */
+    /*background-color: #141414;*/ /* Set the box background color */
+    background: linear-gradient(to left, #090909, #151515);
+    border: 2px solid var(--pink); /* Add a border */
+    border-radius: 10px; /* Round the corners */
+    text-align: center; /* Center the text inside the box */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Add a shadow for better visuals */
+}
+
+.background-box p {
+    font-size: 20px;
+    color: #ffffff;
+}
+    
 
 /* --------------------------------------- */
 /* ----- Clients ----- */
