@@ -532,7 +532,18 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Education ----- */
 /* --------------------------------------- */
+.education {
+    padding: 40px 0;
+}
+    .education h2 {
+        margin-bottom: 20px; /* pushes boxes down below the title */
+    }
 
+    .education .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 .background-box {
     /*width: 380px;*/ /* Set the box width */
     max-width: 380px;
