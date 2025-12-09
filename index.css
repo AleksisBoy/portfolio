@@ -659,7 +659,7 @@ body:not(.user-is-tabbing) a:focus {
     transition: max-height 3.5s ease; 
 }
 #collapsedArea.expanded {
-    max-height: 3000px;
+    max-height: 4000px;
 }
 
 /* Fade overlay */
