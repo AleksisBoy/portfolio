@@ -1,4 +1,4 @@
-/* -----------------------------------------
+﻿/* -----------------------------------------
   Have focus outline only for keyboard users 
  ---------------------------------------- */
 
@@ -40,4 +40,21 @@ window.addEventListener("scroll", () => {
     isBackToTopRendered = false;
     alterStyles(isBackToTopRendered);
   }
+});
+
+/* -----------------------------------------
+  Expand / Collapse Project List
+---------------------------------------- */
+const collapsed = document.getElementById('collapsedArea');
+const btn = document.getElementById('expandBtn');
+
+btn.addEventListener('click', () => {
+    collapsed.classList.toggle('expanded');
+    collapsed.classList.toggle('collapsed');
+
+    if (collapsed.classList.contains('expanded')) {
+        btn.style.display = "none"; // hide the button if desired
+    } else {
+        btn.textContent = "Show more ↓";
+    }
 });
